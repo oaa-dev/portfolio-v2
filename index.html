@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="profile section d-flex flex-column justify-content-center align-items-center">
+                    <div class="image">
+                        <img src="images/alien.jpg" alt="images">
+                    </div>
+                    <div class="information text-center">
+                        <h3>Hello, <span class="highlight">Im Christian</span></h3>
+                        <p>I am a passionate Web Developer form Cabuyao, Laguna</p>
+                        <div class="social-icons">
+                            <ul>
+                                <li><img src="images/icons8-facebook-32.png" alt=""></li>
+                                <li><img src="images/icons8-facebook-messenger-32.png" alt=""></li>
+                                <li><img src="images/icons8-github-32.png" alt=""></li>
+                                <li><img src="images/icons8-google-plus-32.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="height: 1000px;">
+                <div class="section about">
+                    <div class="title offset-2">01. About Me <div class="horizontal-line"></div></div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="navigation-bar bottom-right">
+            <ul>
+                <li><img src="images/icons8-predator-96.png" alt=""></li>
+                <li><img src="images/icons8-planet-96.png" alt=""></li>
+                <li><img src="images/icons8-fighter-96.png" alt=""></li>
+                <li><img src="images/icons8-comet-96.png" alt=""></li>
+                <li><img src="images/icons8-astronaut-helmet-96.png" alt=""></li>
+                <!-- <li><img src="images/icons8-astronaut-96.png" alt=""></li> -->
+                <li><div class="vertical-line"></div></li>
+            </ul>
+        </div>
+        <div class="navigation-bar top-left">
+            <ul>
+                <li><div class="vertical-line"></div></li>
+                <li style="writing-mode:vertical-rl; transform: rotate(-180deg);"><span style="font-size: 30px;">oaa-dev</span></li>
+                <li><img src="images/icons8-astronaut-96.png" alt=""></li> </ul>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function(){
+            /* particles */
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": 30,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#A9A9A9"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#A9A9A9",
+                        "opacity": 0.4,
+                        "width": 1.5
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "window",
+                    "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 1
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        })
+    </script>
+</body>
+</html>

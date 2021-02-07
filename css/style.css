@@ -1,0 +1,146 @@
+body{
+    font-family: 'Big Shoulders Display', cursive;
+    background-color: #0a192f;
+    color: aliceblue;
+
+    /* #152238 */
+    /* --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2,12,27,0.7);
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda; */
+}
+
+
+#particles-js canvas {
+    display: block;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+} 
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    /* fixed */
+    position: absolute; 
+    z-index: -10;
+    top: 0;
+    left: 0
+}
+
+.section{
+    /* background-color: aquamarine; */
+    min-height: 100vh;
+}
+
+.profile .image {
+    margin-bottom: 10px;
+}
+
+.profile .image img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.profile .information p{
+    letter-spacing:0.1rem;
+    color: #8892b0;
+}
+
+.profile .information .social-icons ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.highlight{
+    color: #ccd6f6;
+}
+
+.navigation-bar {
+    position: fixed;
+    margin: 5px;
+    /* z-index: 100; */
+}
+
+.bottom-right{
+    bottom: 0px;
+    right: 30px;
+}
+
+.top-left{
+    top: 0px;
+    /* left: 20px; */
+}
+
+/* .bottom-right{
+    botton: 0px;
+    : 30px;
+} */
+
+.navigation-bar ul{
+    list-style: none;
+}
+
+.navigation-bar ul li{
+    margin-top: 20px;
+    opacity: 70%;
+    text-align: center;
+}
+
+.navigation-bar ul img{
+    width: 30px;
+    
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition:         transform .8s ease-in-out;
+}
+
+.navigation-bar ul img:hover {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+.vertical-line{
+  border: 2px solid whitesmoke;
+  height: 70px;
+  width: 3px;
+  margin: 0 auto;
+  opacity: 70%;
+}
+
+
+.horizontal-line{
+    border: 2px solid whitesmoke;
+    height: 3px;
+    width: 70px;
+    margin: auto 0;
+    opacity: 70%;
+  }
+
+  .title .horizontal-line{
+      margin:auto 10px;
+      width: 30%;
+      height: 2px;
+  }
+
+  .about{
+      margin: 150px 0;
+  }
+
+  .title{
+        display: flex;
+        align-items: center;
+        
+        font-size: 30px;
+  }
+  
