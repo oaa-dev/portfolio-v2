@@ -31,8 +31,8 @@ body{
 #particles-js {
     width: 100%;
     height: 100%;
-    /* absolute */
-    position: fixed; 
+    /* fixed */
+    position: absolute; 
     z-index: -10;
     top: 0;
     left: 0
@@ -58,8 +58,8 @@ body{
 }
 
 .profile .information p{
-    letter-spacing:4px;
-    font-size: 20px;
+    letter-spacing:3px;
+    font-size: 23px;
     color: #8892b0;
 }
 
@@ -88,13 +88,7 @@ body{
 
 .top-left{
     top: 0px;
-    /* left: 20px; */
 }
-
-/* .bottom-right{
-    botton: 0px;
-    : 30px;
-} */
 
 .navigation-bar ul{
     list-style: none;
@@ -153,27 +147,33 @@ body{
     align-items: center;
     font-size: 35px;
     /* margin-left: 200px; */
+    margin-bottom: 50px;
 }
 
 .cards {
     min-height: 100vh;
-    /* margin: 150px 0 ; */
+    margin: 200px 0 ;
 }
   
 .cards .card-item {
     font-size: 25px;
-    padding: 50px;
+    padding: 60px 30px;
+}
+
+.cards .card-item img{
+    /* width: 70%; */
 }
 
 .cards .card-item .title {
     font-family: 'Big Shoulders Display', cursive;
     margin: 10px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .cards .card-item .description {
     padding: 20px;
     letter-spacing: 0.1em;
+    font-size: 20px;
 }
 
 
@@ -224,4 +224,51 @@ I tend to go for a 600px - 960px width max but using percentages
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
 /* For landscape layouts only */
+}
+
+
+
+.progress-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 20px;
+    letter-spacing: 3px;
+}
+.progress{
+    height: 20px;
+    background: #171b3c;
+    border-radius: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 2px #4f4c4c;
+    margin-bottom: 40px;
+    overflow: visible;
+    position: relative;
+}
+.progress .progress-bar{
+    border-radius: 20px;
+    border:  1px solid #000;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+}
+.progress .progress-value{
+    width: 65px;
+    height: 25px;
+    line-height: 25px;
+    background: #171b3c;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 0 0 15px 15px;
+    border: 1px solid #000;
+    border-top: none;
+    box-shadow: 0 2px 2px #4f4c4c;
+    position: absolute;
+    bottom: -25px;
+    right: 60px;
+}
+@-webkit-keyframes animate-positive{
+    0% { width: 0; }
+}
+@keyframes animate-positive{
+    0% { width: 0; }
 }
