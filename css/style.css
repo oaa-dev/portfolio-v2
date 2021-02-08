@@ -1,4 +1,5 @@
 body{
+    font-family: 'Press Start 2P', cursive;
     font-family: 'Big Shoulders Display', cursive;
     background-color: #0a192f;
     color: aliceblue;
@@ -30,8 +31,8 @@ body{
 #particles-js {
     width: 100%;
     height: 100%;
-    /* fixed */
-    position: absolute; 
+    /* absolute */
+    position: fixed; 
     z-index: -10;
     top: 0;
     left: 0
@@ -51,8 +52,14 @@ body{
     border-radius: 50%;
 }
 
+.profile .information h3{
+    letter-spacing:10px;
+    font-size: 90px;
+}
+
 .profile .information p{
-    letter-spacing:0.1rem;
+    letter-spacing:4px;
+    font-size: 20px;
     color: #8892b0;
 }
 
@@ -64,7 +71,8 @@ body{
 
 
 .highlight{
-    color: #ccd6f6;
+    /* ccd6f6 */
+    color: #F66120;
 }
 
 .navigation-bar {
@@ -111,36 +119,109 @@ body{
 }
 
 .vertical-line{
-  border: 2px solid whitesmoke;
-  height: 70px;
-  width: 3px;
-  margin: 0 auto;
-  opacity: 70%;
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    height: 70px;
+    width: 3px;
+    margin: 0 auto;
+    opacity: 70%;
 }
 
 
 .horizontal-line{
     border: 2px solid whitesmoke;
+    background-color: whitesmoke;
     height: 3px;
     width: 70px;
     margin: auto 0;
     opacity: 70%;
-  }
+}
 
-  .title .horizontal-line{
-      margin:auto 10px;
-      width: 30%;
-      height: 2px;
-  }
+.title .horizontal-line{
+    margin:auto 10px;
+    width: 30%;
+    height: 2px;
+}
 
-  .about{
-      margin: 150px 0;
-  }
+/* .about{
+    margin: 150px 0;
+} */
 
-  .title{
-        display: flex;
-        align-items: center;
-        
-        font-size: 30px;
-  }
+.title{ 
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    /* margin-left: 200px; */
+}
+
+.cards {
+    min-height: 100vh;
+    /* margin: 150px 0 ; */
+}
   
+.cards .card-item {
+    font-size: 25px;
+    padding: 50px;
+}
+
+.cards .card-item .title {
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 10px;
+    font-size: 40px;
+}
+
+.cards .card-item .description {
+    padding: 20px;
+    letter-spacing: 0.1em;
+}
+
+
+  
+
+/* default styles here for older browsers. 
+I tend to go for a 600px - 960px width max but using percentages
+*/
+@media only screen and (min-width: 960px) {
+    /* styles for browsers larger than 960px; */
+}
+@media only screen and (min-width: 1440px) {
+    /* styles for browsers larger than 1440px; */
+}
+@media only screen and (min-width: 2000px) {
+    /* for sumo sized (mac) screens */
+}
+@media only screen and (max-device-width: 480px) {
+/* styles for mobile browsers smaller than 480px; (iPhone) */
+    .navigation-bar{
+        display: none;
+    }
+    
+    .title {
+        font-size: 20px;
+    }
+
+    .cards .card-item .title {
+        font-size: 30px;
+    }
+    
+    .cards .card-item .description {
+        font-size: 20px;
+    }
+
+    
+    .cards .card-item {
+        padding: 10px;
+    }
+}
+@media only screen and (device-width: 768px) {
+/* default iPad screens */
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+/* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+/* For landscape layouts only */
+}

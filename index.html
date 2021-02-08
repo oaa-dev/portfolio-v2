@@ -6,7 +6,9 @@
     <title>Document</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,8 +22,8 @@
                         <img src="images/alien.jpg" alt="images">
                     </div>
                     <div class="information text-center">
-                        <h3>Hello, <span class="highlight">Im Christian</span></h3>
-                        <p>I am a passionate Web Developer form Cabuyao, Laguna</p>
+                        <h3>Hello, Im <span class="highlight">Christian</span></h3>
+                        <p>I am a passionate <span class="highlight">Web Developer</span> form Cabuyao, Laguna</p>
                         <div class="social-icons">
                             <ul>
                                 <li><img src="images/icons8-facebook-32.png" alt=""></li>
@@ -35,9 +37,177 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12" style="height: 1000px;">
-                <div class="section about">
-                    <div class="title offset-2">01. About Me <div class="horizontal-line"></div></div>
+            <div class="col-lg-10 offset-lg-1">
+                <div class="section cards" style="min-height: 100vh;">
+                    <div class="title offset-sm-3">01. Projects <div class="horizontal-line"></div></div>
+                    <div class="d-flex flex-column">
+                        <div class="card-item row">
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <img src="images/ss2.png" width="100%" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <h3 class="title highlight">POS Management System</h3>
+                                <p class="description text-justify">
+                                    This project build using PHP and optimized using Codeigniter Framework, Ajax, Bootstrap, etc. This project can create user account with unique access from each modules, monitor sales reports, inventory status, reconsile products, actvity logs of every user, etc.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-item row flex-row-reverse">
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <img src="images/ss2.png" width="100%" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <h3 class="title highlight">POS Management System</h3>
+                                <p class="description text-justify">
+                                    This project build using PHP and optimized using Codeigniter Framework, Ajax, Bootstrap, etc. This project can create user account with unique access from each modules, monitor sales reports, inventory status, reconsile products, actvity logs of every user, etc.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="section cards">
+                    <div class="title offset-sm-3">01. Projects <div class="horizontal-line"></div></div>
+                    <div>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active card-item">
+                                    <div class="row">
+                                        <div class="col-lg-6 d-flex align-items-center">
+                                            <img src="images/ss2.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h3 class="title highlight">POS Management System</h3>
+                                            <p class="description text-justify">
+                                                This project build using PHP and optimized using Codeigniter Framework, Ajax, Bootstrap, etc. This project can create user account with unique access from each modules, monitor sales reports, inventory status, reconsile products, actvity logs of every user, etc.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-item card-item">
+                                    <div class="row">
+                                        <div class="col-lg-6 d-flex align-items-center">
+                                            <img src="images/ss3.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h3 class="title highlight">IskoCab Management System</h3>
+                                            <p class="description text-justify">
+                                                This project build using Laravel Framework on our On-the-job Training days. This project focus on Scholars of Cabuyao City, Laguna and also to help Cabuyao Youth Development Office Affairs Office (CYDAO). Process Scholarship applications Online, Monitor scholar academic progess, etc.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-item card-item">
+                                    <div class="row">
+                                        <div class="col-lg-6 d-flex align-items-center">
+                                            <img src="images/ss.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h3 class="title highlight">My Portfolio</h3>
+                                            <p class="description text-justify">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item card-item">
+                                    <div class="row">
+                                        <div class="col-lg-6 d-flex align-items-center">
+                                            <img src="images/ss4.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h3 class="title highlight">Asclepius v1</h3>
+                                            <p class="description text-justify">
+                                                Asclepius v1 name came from the god of medicine, Asclepius. This project Laboratory Clinic Management System is build when i was 3rd year college student (project), it can Manage Patients, Doctors, Histories, Scheduling and queuing of patients etc. Construct using C# programming language.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="section cards">
+                    <div class="title offset-sm-3 ">01. Projects <div class="horizontal-line"></div></div>
+                    <div>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active card-item">
+                                    <div class="row">
+                                        <div class="col-lg-6 d-flex align-items-center">
+                                            <img src="images/ss2.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h3 class="title highlight">POS Management System</h3>
+                                            <p class="description text-justify">
+                                                This project build using PHP and optimized using Codeigniter Framework, Ajax, Bootstrap, etc. This project can create user account with unique access from each modules, monitor sales reports, inventory status, reconsile products, actvity logs of every user, etc.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-item card-item">
+                                    <div class="row">
+                                        <div class="col-lg-6 d-flex align-items-center">
+                                            <img src="images/ss3.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h3 class="title highlight">IskoCab Management System</h3>
+                                            <p class="description text-justify">
+                                                This project build using Laravel Framework on our On-the-job Training days. This project focus on Scholars of Cabuyao City, Laguna and also to help Cabuyao Youth Development Office Affairs Office (CYDAO). Process Scholarship applications Online, Monitor scholar academic progess, etc.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-item card-item">
+                                    <div class="row">
+                                        <div class="col-lg-6 d-flex align-items-center">
+                                            <img src="images/ss.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h3 class="title highlight">My Portfolio</h3>
+                                            <p class="description text-justify">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item card-item">
+                                    <div class="row">
+                                        <div class="col-lg-6 d-flex align-items-center">
+                                            <img src="images/ss4.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h3 class="title highlight">Asclepius v1</h3>
+                                            <p class="description text-justify">
+                                                Asclepius v1 name came from the god of medicine, Asclepius. This project Laboratory Clinic Management System is build when i was 3rd year college student (project), it can Manage Patients, Doctors, Histories, Scheduling and queuing of patients etc. Construct using C# programming language.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,7 +290,7 @@
                     },
                     "move": {
                         "enable": true,
-                        "speed": 2,
+                        "speed": 1,
                         "direction": "none",
                         "random": false,
                         "straight": false,
