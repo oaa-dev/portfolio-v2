@@ -137,43 +137,58 @@ body{
     height: 2px;
 }
 
-/* .about{
-    margin: 150px 0;
-} */
-
-.title{ 
-    font-family: 'Press Start 2P', cursive;
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-    /* margin-left: 200px; */
-    margin-bottom: 50px;
-}
-
 .cards {
-    min-height: 100vh;
-    margin: 200px 0 ;
-}
-  
-.cards .card-item {
-    font-size: 25px;
-    padding: 60px 30px;
+    margin: 50px 0;
 }
 
-.cards .card-item img{
-    /* width: 70%; */
+.cards .card-image img{
+    width: 130%;
+}   
+
+.cards .card-content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.cards .card-item .title {
-    font-family: 'Big Shoulders Display', cursive;
-    margin: 10px;
-    font-size: 30px;
+.cards .card-content-right .card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.cards .card-item .description {
-    padding: 20px;
-    letter-spacing: 0.1em;
-    font-size: 20px;
+
+.cards .card-content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cards .card-content-left .card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.cards .languages{
+    width: 100%; 
+    margin: 10px 0; 
+}
+
+.cards .languages ul{
+    list-style: none; 
+
+    display:flex; 
+    justify-content: space-around;
+}
+
+.cards .card-desc{
+    background-color: #112240; 
+    padding: 15px; 
+    width: 110%;
 }
 
 
@@ -226,49 +241,3 @@ I tend to go for a 600px - 960px width max but using percentages
 /* For landscape layouts only */
 }
 
-
-
-.progress-title{
-    font-size: 18px;
-    font-weight: 700;
-    color: #fff;
-    margin: 0 0 20px;
-    letter-spacing: 3px;
-}
-.progress{
-    height: 20px;
-    background: #171b3c;
-    border-radius: 20px;
-    border: 1px solid #000;
-    box-shadow: 0 2px 2px #4f4c4c;
-    margin-bottom: 40px;
-    overflow: visible;
-    position: relative;
-}
-.progress .progress-bar{
-    border-radius: 20px;
-    border:  1px solid #000;
-    -webkit-animation: animate-positive 2s;
-    animation: animate-positive 2s;
-}
-.progress .progress-value{
-    width: 65px;
-    height: 25px;
-    line-height: 25px;
-    background: #171b3c;
-    font-size: 15px;
-    color: #fff;
-    border-radius: 0 0 15px 15px;
-    border: 1px solid #000;
-    border-top: none;
-    box-shadow: 0 2px 2px #4f4c4c;
-    position: absolute;
-    bottom: -25px;
-    right: 60px;
-}
-@-webkit-keyframes animate-positive{
-    0% { width: 0; }
-}
-@keyframes animate-positive{
-    0% { width: 0; }
-}
