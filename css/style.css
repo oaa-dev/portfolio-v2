@@ -109,7 +109,7 @@ body{
     font-size: 25px;
 }
 
-.profile .short-desc{
+.short-desc{
     margin-top: 15px;
     width: 40%;
     letter-spacing: 0.1em;
@@ -122,6 +122,13 @@ body{
 }
 
 
+#skills {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+
 .title {
     display: flex;  
 }
@@ -131,3 +138,17 @@ body{
     width: 20%;
 }
 
+.avatar img{
+    width:300px;
+    background: white;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    color: white;
+    box-shadow: 20px 20px #F66120;
+}
+
+.highlight{
+    color: #F66120;
+}
+
+
+/* ============================================== */
