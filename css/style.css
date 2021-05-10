@@ -1,0 +1,240 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Big Shoulders Display', cursive;
+    background-color: #0a192f;
+    color: aliceblue;
+}
+
+
+#particles-js canvas {
+    display: block;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+} 
+
+#particles-js {
+    width: 100%;
+    height: 100%;   
+    position: absolute; 
+    z-index: -10;
+    top: 0;
+    left: 0
+}
+
+.section{
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.navigation-bar {
+    position: fixed;
+}
+
+.bottom-right{
+    bottom: 0px;
+    right: 30px;
+}
+
+.bottom-left{
+    bottom: 0px;
+    /* right: 30px; */
+}
+
+.top-right{
+    top: 0px;
+    right: 30px;
+}
+
+.top-left{
+    top: 0px;
+}
+
+.navigation-bar ul{
+    list-style: none;
+}
+
+.navigation-bar ul li{
+    margin-top: 20px;
+    opacity: 70%;
+    text-align: center;
+}
+
+.navigation-bar ul img{
+    width: 30px;
+    
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition:         transform .8s ease-in-out;
+}
+
+.navigation-bar ul img:hover {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+.vertical-line{
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    height: 70px;
+    width: 3px;
+    margin: 0 auto;
+    opacity: 70%;
+}
+
+.horizontal-line{
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    height: 3px;
+    width: 70px;
+    margin: auto 0;
+    opacity: 70%;
+}
+
+/* profile */
+
+.profile {
+    margin: 0;
+}
+
+.profile h1, h2 {
+    margin-top: 20px;
+    font-weight: 700; 
+    letter-spacing: 0.3rem;
+}
+
+
+.profile h1{
+    font-size: 70px;
+}
+
+.profile h2{
+    max-width: 90%; 
+    font-size: 5vw;
+    color: #F66120;
+}
+
+.profile h3 {
+    font-size: 25px;
+}
+
+.profile .short-desc{
+    max-width: 90%; 
+}
+
+.short-desc{
+    margin-top: 15px;
+    padding-left: 0px;
+    letter-spacing: 0.1em;
+    color: #8892b0;
+}
+
+.profile .action {
+    margin-top: 50px;
+    width: 100%;
+}
+
+
+#skills {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.title {
+    display: flex;  
+}
+
+.title .horizontal-line{
+    margin-left: 15px;
+}
+
+.avatar img{
+    width:60%;
+    background: white;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    color: white;
+    box-shadow: 20px 20px #F66120;
+}
+
+.highlight{
+    color: #F66120;
+}
+  /* =================================== */
+
+.cards{
+    position:relative;
+    width: 90%;
+    margin:auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    height: 300px;
+}
+
+.cards img{
+    width: 60%;
+}
+
+.cards-content{
+    position: absolute; 
+    text-align: justify;
+    top: 10px; 
+    right: 0px; 
+    width: 60%;
+}
+
+.cards-content .description{
+    letter-spacing: 0.1em; 
+    color: #8892b0; 
+    background-color: #0a192f;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.cards-content .languages{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding:10px;
+
+
+    list-style-type: none; 
+    letter-spacing: 0.1em; 
+}
+
+
+
+/* ============================================== */
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .top-left{
+        top: 0px;
+        right: 30px;
+    }
+    
+    .navigation-bar {
+        position: absolute;
+    }
+
+    .cards{
+        width: 100%;
+    }
+    
+    
+    .cards img{
+        width: 100%;
+        opacity: 50%;
+    }
+
+    .cards-content{
+        width: 100%;
+    }
+  }

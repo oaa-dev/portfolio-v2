@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <div class="container-fluid">
+        <div class="row" id="home">
+            <div class=" offset-md-1 col-md-10 col-sm-12" >
+                <div class="d-flex section flex-column justify-content-center align-items-start" >
+                    <div class="row">
+                        <div class="profile">
+                            <h3> Hello, my name is </h3>
+                            <h1> John Christian Oraa</h1>
+                            <h2> I'm a Web Developer from Laguna</h2>
+                            <div class="col-md-6 short-desc" >
+                                <p>
+                                    Dedicated web developer with 2 years of experience. Specialized in creating custom web Application using PHP, HTML, CSS,
+                                    and Framework like Laravel and Bootstrap. Strong creative and analytical skills.
+                                </p>
+                            </div>
+                            <div class="action">
+                                <a class="btn btn-lg btn-outline-light" href="#contacts">GET IN TOUCH</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="about-me">
+            <div class="offset-md-1 col-md-10 offset-sm-1 col-sm-10">
+                <div class="section d-flex justify-content-center flex-column align-items-start">
+                    <h1 class="title offset-2 ">About Me<div class="horizontal-line"></div></h1>
+                    <div class="row">
+                        <div class="col-md-5 offset-md-1 col-sm-12 short-desc text-justify">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <br><br><br>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <ul id="skills">
+                                <li>PHP</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                                <li>AJAX</li>
+                                <li>JQUERY</li>
+                                <li>JAVASCRIPT</li>
+                                <li>LARAVEL FRAMEWORK</li>
+                                <li>CODEIGNITER FRAMEWORK</li>
+                                <li>BOOTSTRAP</li>
+                                <li>C#</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <div class="avatar align-middle" style="padding: 50px 0 50px 0;">
+                                <img src="images/profile.jpg"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="my-projects">
+            <div class="col-md-10 offset-md-1 col-sm-12">
+                <div class="section d-flex justify-content-center flex-column">
+                    <h1 class="title offset-2 ">Projects<div class="horizontal-line"></div></h1>
+                    <div class="row">
+                        <div class="cards">
+                            <img src="images/ss2.png">
+                            <div class="cards-content">
+                                <div class="text-right">
+                                    <p class="m-0" style="font-size: 25px;">Feature Projects</p>
+                                    <h3 class="highlight" style="font-size: 40px;">POS Management System</h3>
+                                </div>
+                                
+                                <div class="description" style="text-indent: 0.5in; border-left:2px solid; border-top:2px solid;">
+                                    <p>This project build using PHP and optimized using Codeigniter Framework, Ajax, Bootstrap, etc. This project can create user account with unique access from each modules, monitor sales reports, inventory status, reconsile products, actvity logs of every user, etc.</p>    
+                                </div>
+                                <div>
+                                    <ul class="languages">
+                                        <li>Codeigniter</li>
+                                        <li>AJAX</li>
+                                        <li>MySQL</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="cards">
+                            <img src="images/ss3.png">
+                            <div class="cards-content">
+                                <div class="text-right">
+                                    <p class="m-0" style="font-size: 25px;">Feature Projects</p>
+                                    <h3 class="highlight" style="font-size: 40px;">IskoCab Management System</h3>
+                                </div>
+                                
+                                <div class="description" style="text-indent: 0.5in; border-left:2px solid; border-top:2px solid;">
+                                    <p>This project build using Laravel Framework on our On-the-job Training days. This project focus on Scholars of Cabuyao City, Laguna and also to help Cabuyao Youth Development Office Affairs Office (CYDAO). Process Scholarship applications Online, Monitor scholar academic progess, etc.</p>    
+                                </div>
+                                <div>
+                                    <ul class="languages">
+                                        <li>Codeigniter</li>
+                                        <li>AJAX</li>
+                                        <li>MySQL</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row" id="contacts">
+            <div class="col-md-10 offset-md-1 col-sm-12">
+                <div class="section d-flex justify-content-center flex-column">
+                    <h1 class="title offset-2 ">Contacts<div class="horizontal-line"></div></h1>
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-md-12">
+                            <div class="row" style="height: 200px;">
+                                <div class="col-md-12">
+                                    <div id="map" style="height:100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 20px; letter-spacing: 0.1em;  color: #8892b0;">
+                        <div class="col-md-6" style="padding:10px; border-left: 2px solid; border-top: 2px solid;">   
+                            <p style="font-size: 20px;">If you have any question, you can contact me on this number or through my email address for further information. 
+                               </p>
+                            
+                            <ul style="list-style-type: none; zoom: 110%; padding: 10px;">
+                                <li><span class="highlight">CONTACT NUMBER:</span> 0966 667 2764</li>
+                                <li><span>ADDRESS:</span> BRGY. BANAY BANAY CITY OF CABUYAO, LAGUNA</li>
+                                <li><span>EMAIL:</span> johnoraa24@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-center" style="padding: 10px; border-left: 2px solid ;border-bottom: 2px solid; border-right: 2px solid;">
+                            <h3 class="highlight">Download my Resume</h3>
+                            <p>You can download and check my resume here for more information. I hope to work with you in the future. Thank you!</p>
+                            <a href="./assets/my-resume.docx" class="btn btn-primary btn-lg" download="my-resume"><i class="fa fa-download"></i> DOWNLOAD CV</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="navigation-bar bottom-right">
+            <ul>
+                <li data-placement="left" data-toggle="tooltip" title="HOME"><a href="#home"><img src="images/icons8-planet-96.png" alt=""></a></li>
+                <li data-placement="left" data-toggle="tooltip" title="ABOUT ME"><a href="#about-me"><img src="images/icons8-predator-96.png" alt=""></a></li>
+                <li data-placement="left" data-toggle="tooltip" title="MY PROJECT"><a href="#my-projects"><img src="images/icons8-fighter-96.png" alt=""></a></li>
+                <li data-placement="left" data-toggle="tooltip" title="SKILLS"><a href="#skills"><img src="images/icons8-comet-96.png" alt="" ></a></li>
+                <li data-placement="left" data-toggle="tooltip" title="CONTACT ME"><a href="#contacts"><img src="images/icons8-astronaut-helmet-96.png" alt=""></a></li>
+                <li><div class="vertical-line"></div></li>
+            </ul>
+        </div>
+        <div class="navigation-bar top-left">
+            <ul>
+                <li><div class="vertical-line"></div></li>
+                <li style="writing-mode:vertical-rl; transform: rotate(-180deg);"><span style="font-size: 30px;">oaa-dev</span></li>
+                <li><img src="images/icons8-astronaut-96.png" alt=""></li> </ul>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+            // MAP
+            var map = L.map('map').setView([14.2471, 121.1367], 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+                        
+            /* particles */
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": 30,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#A9A9A9"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#A9A9A9",
+                        "opacity": 0.4,
+                        "width": 1.5
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 1,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "window",
+                    "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 1
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        })
+    </script>
+</body>
+</html>
